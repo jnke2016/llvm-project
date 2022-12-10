@@ -2,7 +2,7 @@ This clang extra tool captures important information in a giving source file suc
 1) The function names.
 2) The number of loops per functions (either for, while or do while loop).
 3) The number of time each function is called.
-4) The number of arguments per function.
+4) The number of arguments per function(the function needs to be called at least once in order for its number of arguments to be returned).
 
 This implementation leverages the libASTMatchers which is another way of traversing an AST like
 the recursiveASTVisitor. In fact, the libASTMatchers provides a simple, powerful and concise way
